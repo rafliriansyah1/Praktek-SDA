@@ -1,0 +1,32 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Mar 27 21:40:08 2022
+
+@author: Rafli_Riansyah
+"""
+
+import matplotlib.pyplot as plt
+import numpy as np
+import time
+list= [150, 300, 500, 700, 750, 1000, 1300, 1600, 2000, 2500]
+rataanwaktu=[]
+print("%12s%16s"%("Ukuran Data","Waktu"))
+def nyoba(x):
+    hasil=0
+    for i in range(len(x)-1):
+        hasil+= (abs(x[i+1]-x[i]))
+    return hasil
+total_waktu=0
+for i in range(len(list)):
+    a=list[i]
+    for j in range(5):
+         random=np.random.randint(0,1000,a)
+         start=time.time()
+         nyoba(random)
+         end=time.time()
+         elapsed=time.time() - start
+         total_waktu+=elapsed
+    rata_rata_waktu=total_waktu/5
+    rataanwaktu.append(rata_rata_waktu)
+    print("%12d%16.9f"%(a,rata_rata_waktu))
+plt.plot(list)
