@@ -1,0 +1,22 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Mar 27 22:16:25 2022
+
+@author: Rafli_Riansyah
+"""
+
+import time
+
+Nim= int(input('2 Digit NIM Anda: '))
+Nim_2=Nim +150
+print('====[Data] ===='.center(50))
+mulai = time.time()
+
+for index in range(Nim_2): 
+    print (index, end=' ')
+selesai = time.time()
+elapsed = selesai - mulai
+print('===========Hasil===========') 
+print('Mulai: %1.5f'% (mulai))
+print('Selesai: %1.5f '%(selesai))
+print('\nWaktu yang dibutuhkan: %1.7f'%(elapsed))
