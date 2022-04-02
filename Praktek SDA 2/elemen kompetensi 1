@@ -1,0 +1,28 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Apr  2 09:22:43 2022
+
+@author: Rafli_Riansyah
+
+"""
+nama = str(input("masukan nama anda = "))
+NIM  = str(input("masukan nim anda = "))
+print("Nama = ", nama)
+print("NIM = ", NIM)
+
+
+def bubble_sorted():
+     list=[]
+     n = str(input("Masukan Bilangan = "))
+     n = n.split(',')
+     list = [int(i) for i in n]
+    
+     print('list normal:',list)
+
+     for i in range(len(list)-1):
+        for j in range(len(list)-1-i):
+            if list[j]>list[j+1]:
+               list[j],list[j+1] = list[j+1],list[j]
+     print('Hasilnya Bubble Sort =', list)
+    
+bubble_sorted()
