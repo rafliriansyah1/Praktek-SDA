@@ -1,0 +1,8 @@
+print("\nElemen Kompetensi 1 Latihan 4")
+print("===Rafli Riansyah===")
+print("\n2. Mencari angka yang sama")
+wle = int(input("angka yang ingin dicek = "))
+count = one.count(wle)
+print("jumlah angka yang sama dengan",wle,":",count)
+print("\n3. Mencari panjang list")
+print("Panjang list = ",len(one))
