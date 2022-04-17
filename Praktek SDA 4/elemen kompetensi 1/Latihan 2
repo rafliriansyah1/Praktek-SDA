@@ -1,0 +1,6 @@
+print("\nElemen Kompetensi 1 Latihan 2")
+print("===Rafli Riansyah===")
+dob = int(input("Masukan angka kedua terakhir NIM : "))
+one.insert(0, dob)
+print("setelah di gabungkan",one)
+print("")
