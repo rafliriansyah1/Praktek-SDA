@@ -1,0 +1,10 @@
+print("\nElemen Kompetensi 1 Latihan 3")
+print("===Rafli Riansyah===")
+import random
+two=[]
+panjang_list=5
+for j in range(panjang_list):
+    two.append(random.randint(1,20))
+print("\nlist2 : ",two)
+one.extend(two)
+print(f"\nPenggabungan List 1 dan List 2 = ",one)
