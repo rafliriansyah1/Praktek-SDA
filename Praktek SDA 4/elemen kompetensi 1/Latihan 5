@@ -1,0 +1,4 @@
+print("\n4. mencari index dari suatu angka")
+cek = int(input(" angka yang ingin dicek: "))
+index = one.index(cek)
+print("index dari angka",cek,"adalah:",index)
