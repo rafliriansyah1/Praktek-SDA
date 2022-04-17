@@ -1,0 +1,17 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Apr 17 11:12:42 2022
+
+@author: Rafli_Riansyah
+"""
+from numpy import random
+print("")
+
+print("Elemen Kompetensi 1 Latihan 1")
+print("===Rafli Riansyah===")
+one=[]
+ask=int(input("Masukan angka: "))
+for i in range(ask):
+    one.append(random.randint(1,100))
+    one.sort()
+print("Ini listnya =",one)
