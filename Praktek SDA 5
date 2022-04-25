@@ -1,0 +1,50 @@
+@author: Rafli_Riansyah
+"""
+nama = str(input("Masukan Nama Anda = "))
+NIM = str(input("Masukan NIM Anda = "))
+Tugas = str(input("Tugas apa = "))
+print("Nama = ", nama)
+print("NIM = ", NIM)
+print("Tugas ", Tugas)
+
+class Stack:
+def __init__(self):
+self.stack = []
+self.hitung = 0
+def menu(self):
+print("A. Push")
+print("B. Pop")
+print("C. See Stack")
+print("D. Quit")
+print("Mau yang mana: ")
+def push(self):
+self.stack.append(input("push: "))
+self.hitung += 1
+def pop(self):
+if self.hitung == 0:
+print("Stack kosong")
+else:
+print("pop",self.stack.pop())
+self.hitung -= 1
+def display(self):
+if self.hitung == 0:
+print("Stack tidak ada isinya")
+else:
+print("Stack: ", self.stack)
+def main(self):
+while True:
+self.menu()
+choice = (input())
+if choice == "A" or choice == "a":
+self.push()
+elif choice == "B" or choice == "b":
+self.pop()
+elif choice == "C" or choice == "c":
+self.display()
+elif choice == "D" or choice == "d":
+self.display()
+break
+else:
+print("Keyword Anda Salah")
+st=Stack()
+st.main()
